@@ -74,3 +74,32 @@ footer #contact {
     color: white;
     font-weight: 700;
 }
+
+/** Card styling */
+.card {
+    margin-top: 16px;
+    width: 33%;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+}
+.card h4 {
+    font-size: 3em;
+}
+.card p {
+    font-size: 2em;
+}
+  
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+  
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
