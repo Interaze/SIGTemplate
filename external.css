@@ -6,41 +6,126 @@
 }
 
 body{
-    background-color: blue;
+    height: auto;
+}
+
+h1{
+    width: 100%;
+    font-size: 525%;
 }
 
 #content{
     margin: 0 auto;
+    padding: 40px 20px;
     width: 100%;
-    max-width: 1000px;
-    min-height: 100%;
+    max-width: 960px;
+    min-height: 85.4vh;
     background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#wrapper{
+    width: 100vw;
+    background-image: url("background2.svg");
+    display: flex;
 }
 
 #navbar{
     width: 100%;
     overflow: hidden;
     list-style-type: none;
-    background-color: grey;
+    background-color: #181b1f;
+}
+
+#navbar a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 #navbar li{
     display: inline-block;
     float: right;
     padding: 25px;
-    background-color: green;
+    color: #ff6700;
 }
 
-#navbar li:hover{
-    background-color: red;
+#active{
+    background-color: rgb(255, 149, 0);
+    pointer-events: none;
 }
 
-#icon{
+#navbar li:hover a{
+    color: rgb(255, 149, 0);
+}
+
+#navbar li#icon{
     float: left;
+    padding: 0;
+    background-color: white;
 }
 
 #footer{
-    height: 300px;
     width: 100%;
-    background-color: white;
+    height: 200px;
+    padding: 30px 17px;
+    color: #f6f6f6;
+    background-color: #24292e;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    background-color: green;
+    -webkit-box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+.imgplace{
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.imgplace img{
+    height: 250px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.caption {
+    margin-top: auto;
+    height: 150px;
+    background-color: #171b1e;
+    color: white;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.caption h4{
+    height: 35px;
+    padding: 3px 10px;
+    font-size: 35px;
+}
+
+.caption h5{
+    height: 86px;
+    padding: 3px 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 1039px){
+    #content{
+        justify-content: center;
+    }
+
 }
