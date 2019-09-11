@@ -52,6 +52,7 @@ li a:hover {
     padding-top: 8px;
     min-height: 90vh;
     background-color: white;
+    padding-bottom: 200px;
 }
 
 .content-wrapper {
@@ -77,6 +78,7 @@ footer #contact {
 
 /** Card styling */
 .card {
+    display: inline-block;
     margin-top: 16px;
     width: 33%;
     /* Add shadows to create the "card" effect */
