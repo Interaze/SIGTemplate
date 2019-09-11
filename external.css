@@ -32,6 +32,12 @@ h1{
     display: flex;
 }
 
+#jumbotron{
+    width: 100%;
+    height: 75vh;
+    margin-bottom: -4px;
+}
+
 #navbar{
     width: 100%;
     overflow: auto;
