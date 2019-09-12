@@ -1,0 +1,73 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/** Navbar **/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+li {
+    float: right;
+}
+
+#title {
+    float:left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+
+/** new stuff **/
+#title {
+    margin-left: 10%;
+}
+
+.article-card, .user-card {
+    border: 1px solid black;
+    padding: 16px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/** content wrapper **/
+.content {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 8px;
+    min-height: 80vh;
+    background-color: white;
+}
+
+/* Footer styling */
+footer {
+    background-color: black;
+    height: 140px;
+    width: 100%;
+}
+
+footer #contact {
+    padding-top: 32px;
+    padding-left: 32px;
+    font-size: 1.5em;
+    float:left;
+    color: white;
+    font-weight: 700;
+}
